@@ -1,0 +1,126 @@
+/* Colorimétire & Largeurs d'écran
+
+Nutmeg: hsl(14, 45%, 36%)
+Dark Raspberry: hsl(332, 51%, 32%)
+White: hsl(0, 0%, 100%)
+Rose White: hsl(330, 100%, 98%)
+Eggshell: hsl(30, 54%, 90%)
+Light Grey: hsl(30, 18%, 87%)
+Wenge Brown: hsl(30, 10%, 34%)
+Dark Charcoal: hsl(24, 5%, 18%)
+
+Mobile: 375px
+Desktop: 1440px
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+    font-family: "Outfit", sans-serif;
+    color: hsl(24, 5%, 18%);
+    box-sizing: border-box;
+}
+
+/* Mise en place des polices*/
+
+h1, h2, h3 {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+}
+
+h3 {
+    color:hsl(332, 51%, 32%);
+}
+
+/* Mise du container flex*/
+
+body {
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    align-items: center;    
+}
+
+main {
+    max-width: 50%;
+    margin: auto;
+    padding: 2.5%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1em;
+    
+}
+
+/* Mise en place du bloc "Préparation"*/
+
+.preparation {
+    background-color:hsl(330, 100%, 98%);
+    padding: 1px 20px 10px 20px;
+    border-radius: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.preparation ul li{
+    color: hsl(332, 51%, 32%);
+    margin-left:-22px;
+    margin-bottom:10px;
+}
+
+.preparation ul li span {
+    color: hsl(24, 5%, 18%);
+}
+
+/* Mise en place des blocs "Ingrédients" et "Instructions"*/
+
+.ingredients {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: hsl(30, 18%, 87%);
+    margin-bottom: 30px;
+}
+
+.ingredients ul {
+    margin-bottom: 25px;
+}
+
+.ingredients ul li {
+    list-style-type: square;
+    margin-left:-20px;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: hsl(30, 18%, 87%);
+    margin-bottom: 30px;
+}
+
+.instructions ol {
+    margin-bottom: 25px;
+}
+
+.instructions ol li {
+    margin-left:-20px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
