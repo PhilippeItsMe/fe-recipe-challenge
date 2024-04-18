@@ -17,22 +17,22 @@ Desktop: 1440px
 
 * {
     font-family: "Outfit", sans-serif;
-    color: hsl(24, 5%, 18%);
+    color: rgba(48, 45, 44, 0.75);
     box-sizing: border-box;
 }
 
 /* Mise en place des polices*/
 
-h1, h2, h3 {
+h1 {
     font-family: "Young Serif", serif;
     font-weight: 100;
-}
-
-h1 {
     font-size: 2em;
+    color: hsl(24, 5%, 18%);
 }
 
 h2 {
+    font-family: "Young Serif", serif;
+    font-weight: 100;
     color:hsl(14, 45%, 36%);
 }
 
@@ -40,7 +40,7 @@ h3 {
     color:hsl(332, 51%, 32%);
 }
 
-/* Mise du container flex*/
+/* Mise en place du container flex*/
 
 body {
     min-height: 100vh;
@@ -51,16 +51,19 @@ body {
 
 main {
     max-width: 50%;
-    margin: auto;
-    padding: 2.5%;
+    margin: 20px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.5em;
 }
 
 img {
-    max-width: 100%;
-    border-radius: 1em;
-    
+    max-width: 90%;
+    margin: 5% 5% 0% 5%;
+    border-radius: 1.5em;     
+}
+
+section {
+    margin: 0 5% 5% 5%;
 }
 
 /* Mise en place du bloc "Préparation"*/
@@ -77,6 +80,7 @@ img {
     color: hsl(332, 51%, 32%);
     margin-left:-22px;
     margin-bottom:10px;
+    padding-left :30px;
 }
 
 .preparation ul li span {
@@ -97,10 +101,16 @@ img {
 }
 
 .ingredients ul li {
+    color: hsl(14, 45%, 36%);
     list-style-type: square;
-    margin-left:-20px;
+    padding-left : 30px;
+    margin-left: -20px;
     margin-bottom: 10px;
 }
+
+.ingredients ul li span {
+    color: hsl(24, 5%, 18%);
+}  
 
 .instructions {
     border-bottom-style: solid;
@@ -114,9 +124,63 @@ img {
 }
 
 .instructions ol li {
-    margin-left:-20px;
+    color: hsl(14, 45%, 36%);
+    margin-left: -20px;
     margin-bottom: 10px;
+    padding-left :30px;
 }
+
+.instructions ol li span {
+    color: hsl(24, 5%, 18%);
+} 
+
+/* Mise en place de la table*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+}
+
+table tr:nth-of-type(4) {
+    border-bottom: none;
+}
+
+table td {
+    padding: 10px 0 10px 30px;
+}
+
+table td span {
+    color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        background-color: hsl(0, 0%, 100%);
+        margin: 0;
+    }
+    main {
+        max-width: 100%;
+        margin: 0 0;
+        padding: 0;
+    }
+
+    section {
+        margin: 0 7% 5% 7%;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+}
+
+
 
 
 
